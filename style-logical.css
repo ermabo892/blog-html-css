@@ -1,0 +1,246 @@
+:root{
+    --white30: white;
+    --white20: #a5a3a5;
+    --white10: #3a3539; 
+}
+
+body{
+    color: var(--white30);
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    background-color: #251f24;
+    margin: 0;
+}
+
+
+header{
+    font-size: 14px;
+    color: var(--white30);
+}
+
+header a {
+    color: var(--white20);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--white30);
+}
+
+nav details summary{
+    font-weight: bold;
+}
+
+p{
+    color: var(--white20)
+}
+
+h1{
+    font-size: 1.5em;
+    /* font-size: 3.75em; */
+    font-weight: bold;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+
+}
+
+h2{
+    font-size: 2em;
+    /* font-weight: normal; */
+    margin-block: 40px;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-block: 16px;
+}
+
+hr{
+    margin-block-start: 40px;
+    margin-block-end: 40px;
+    border: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+pre{
+    background: var(--white10);
+    padding: 40px;
+    overflow: auto;
+    border-radius: 8px;
+    border: 10px solid #5551ff;
+    box-shadow: -10px 10px 0 0 #abaaf6;
+}
+
+.banner{
+    /* background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent),  url(./images/patron.png); */
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+    block-size: 65px;
+}
+
+.content-section img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+.content-section h3::before{
+    content: counter(titleCounter) '. ';
+}
+
+.content-section h3{
+    counter-increment: titleCounter;
+}
+
+.content-section{
+    counter-reset: titleCounter;
+}
+
+.content-section h3::after{
+    content: "";
+    background-color: #212121;
+    height: 4px;
+    width: 32px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+blockquote{
+    margin-block-start: 80px;
+    margin-inline-end: 63px;
+    background-color: var(--white10);
+    border-radius: 8px;
+    padding: 24px;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+blockquote p {
+    color: var(--white30);
+}
+
+blockquote + hr{
+    display: none;
+}
+
+.wrapper{
+    max-inline-size: 902px;
+    margin: auto;
+    position: relative;
+}
+
+
+.main-content{
+    padding-inline: 16px;
+}
+
+.header{
+    max-inline-size: 902px;
+    margin: auto;
+    /* position: sticky; */
+    /* inset-block-start: -64px;
+    padding-inline: 20px;    */
+}
+
+.header-content{
+    padding-inline-start: 20px;
+    /* inset-block-start: 65px;
+    position: absolute;
+    inline-size: 188px; */
+}
+
+.header li{
+    margin-block-end: 16px;
+}
+
+/* .slider{
+border: solid 5px red;
+
+} */
+
+.slider-container{
+    /* border: solid 5px blue; */
+    /* block-size: 100px; */
+    overflow: hidden;
+    display: block;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.video{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    /* border: solid 5px yellow;  */
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    block-size: 15px;
+    inline-size: 15px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.form input{
+    inline-size: 100%;
+    border: 1px solid var(--white30);
+    background: #251f24;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white30);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+    box-sizing: border-box;
+}
+
+.form input::-webkit-input-placeholder{
+    color: var(--white20);
+}
+
+.form input[type="submit"]{
+    background: #157efb;
+    border: none;
+}
+
+@media screen and (min-width: 1290px){
+    .banner{
+        block-size: 350px;
+    }
+
+    .header{
+        position: sticky;
+        inset-block-start: -64px;
+        padding-inline: 7px;   
+        margin: 0;
+    }
+    
+    .header-content{
+        inset-block-start: 65px;
+        position: absolute;
+        inline-size: 188px;
+    }
+    
+    .header li{
+        margin-block-end: 16px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    .wrapper{
+        padding-inline-start: 10px;
+    }
+}
+
+
+

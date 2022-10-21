@@ -1,0 +1,156 @@
+:root{
+    --gray: #212121; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--gray);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.wrapper{
+    width: 902px;
+    margin: auto;
+    background-color: #212121;
+    
+ 
+    
+}
+.main{
+    margin-left: 50px;
+}
+
+.main-content{
+    background-color: white;
+    position: relative;
+
+}
+
+
+
+.header{
+    font-size: 14px;
+    color: #616161;
+    width: 188px;
+    position:sticky;    
+    top: -64px;
+    margin-left: 50px;
+}
+
+.header-content{
+    position: absolute;
+    top: 64px;
+}
+
+header li{
+    margin-bottom: 16px;
+}
+header a {
+    color: #616161;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #212121;
+}
+
+nav details summary{
+    font-weight: bold;
+    line-height: 24px;
+}
+
+h1{
+    font-size: 2em;
+    /* font-size: 3.75em; */
+    margin-top: 64px;
+    margin-bottom: 16px;
+
+}
+
+h1 ~ p{
+    margin-bottom: 64px;
+}
+
+hr{
+    margin: 64px 0;
+}
+
+h2{
+    font-size: 2em;
+    margin: 40px 0;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+pre{
+    background: #fec62e;
+    padding: 40px;
+    font-family: roboto;
+    line-height: 24px;
+}
+
+.banner{
+    background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent),  url(./images/patron.png);
+    height: 350px;
+}
+
+
+.content-section h3::before{
+    content: counter(titleCounter) '. ';
+}
+
+.content-section h3{
+    counter-increment: titleCounter;
+}
+
+.content-section{
+    counter-reset: titleCounter;
+}
+
+.content-section h3::after{
+    content: "";
+    background-color: #212121;
+    height: 4px;
+    width: 80px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.content-section img{
+    margin-top: 40px ;
+}
+
+.content-section ul li{
+    margin-bottom: 16px ;
+}
+
+.content-section ol li{
+    line-height: 24px ;
+}
+
+blockquote{
+    margin: 32px 0;
+    padding-left: 16px;
+    font-size: 24px;
+    border-left: 4px solid #212121;
+}
+
+blockquote span::before{
+    content: "-";
+}
+
+
+
+
