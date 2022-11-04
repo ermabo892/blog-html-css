@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El blog de Erick</title>
-    <link rel="stylesheet" href="./css/style-logical.css">
+    <link rel="stylesheet" href="./css/nemium-d.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
@@ -55,7 +56,7 @@
     <div class="header">
         <div class="header-content">
             <header>
-                <p>CONTENIDO</p>
+            
                 <nav>
                     <details open>
                         <summary>
@@ -63,7 +64,7 @@
                         </summary>
                         <ol>
                             <a href="#chrome">
-                                <li>a Google Chrome</li>
+                                <li>Google Chrome</li>
                             </a>
                             <a href="#vsc">
                                 <li>Visual Studio Code</li>
@@ -118,19 +119,19 @@
                     <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
                     <hr>
                     <h2>SETUP</h2>
-                    <img src="./images/Google-Chrome-white.png" id="chrome" alt="Logo de Google Chrome" title="Logo de Google Chrome">
+                    <img src="./images/Google-Chrome.png" id="chrome" alt="Logo de Google Chrome" title="Logo de Google Chrome">
                     <h3>Google Chrome</h3>
                     <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
                     
-                    <img src="./images/Visual-Studio-Code-white.png" id="vsc"alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+                    <img src="./images/Visual-Studio-Code.png" id="vsc"alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
                     <h3>Visual Studio Code</h3>
                     <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.</p>
                 
-                    <img src="./images/Figma-white.png" id="figma" alt="Logo de Figma" title="Logo de Figma">
+                    <img src="./images/Figma.png" id="figma" alt="Logo de Figma" title="Logo de Figma">
                     <h3>Figma</h3>
                     <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
                 
-                    <img src="./images/GitHub-white.png" id="github"  alt="Logo de GitHub" title="Logo de GitHub">
+                    <img src="./images/GitHub.png" id="github"  alt="Logo de GitHub" title="Logo de GitHub">
                     <h3>GitHub</h3>
                     <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
                     <blockquote class="blockquote">
@@ -148,16 +149,17 @@
         
                 <section class="content-section">
                     <h2>Conceptos esenciales del Desarrollo Web</h2>
-                    <h3 id="html" class="h3-concepts" >HTML</h3>
+                    <h3 id="html" class="h3-concepts" >Qué es HTML</h3>
                     <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.</p>
                     <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; 
+content=&quot;width=device-width, 
+initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
     
@@ -183,10 +185,10 @@
                     <img id="css-image" src="./images/css.png" alt="Imagen acerca de CSS">
                 </section>
         
-                <section class="content-section">
+                <section class="content-section-two">
         
                     <h2>Modelo de caja</h2>
-                    <h3>El modelo de caja está compuesto por:</h3>
+                    <h3 class="second-content-section">El modelo de caja está compuesto por:</h3>
                     <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
                     <ol>
                         <li>Tamaño del del contenido / ancho y alto</li>
@@ -195,7 +197,7 @@
                         <li>Margin / Márgenes</li>
                     </ol>
                 
-                    <h3>Propiedades físicas para el modelo de caja:</h3>
+                    <h3 class="second-content-section">Propiedades físicas para el modelo de caja:</h3>
                 
                     <ul>
                         <li>width / height</li>
@@ -204,7 +206,7 @@
                         <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
                     </ul>
                 
-                    <h3 class="h3-propiedades-logicas">Propiedades lógicas para el modelo de caja:</h3>
+                    <h3 class="second-content-section">Propiedades lógicas para el modelo de caja:</h3>
                 
                     <ul>
                         <li>
@@ -252,8 +254,11 @@
                     <h4 class="form">Suscríbete a nuestro newsletter</h4>
                     <form action="" class="form">
                         <input type="text" required placeholder="Nombre">
-                        <input type="email" required placeholder="Correo electrónico">
-                        <input type="submit" value="Suscribirme">
+                        <div class="input-button-container">
+                            <input class="input-email" type="email" required placeholder="Correo electrónico">
+                            <input class="input-button" type="submit" value="Suscribirme">
+
+                        </div>
                     </form>
 
                 </div>
@@ -263,9 +268,9 @@
         <footer>
             <h1>© Leonidas Esteban 2021</h1>
             <div>
-                <img src="./images/instagram-icon-black.png" alt="Instagram icon">
-                <img src="./images/facebook-icon-black.png" alt="Facebook icon">
-                <img src="./images/twitter-icon-black.png" alt="Twitter icon">
+                <img src="./images/instagram-icon-white.png" alt="Instagram icon">
+                <img src="./images/facebook-icon-white.png" alt="Facebook icon">
+                <img src="./images/twitter-icon-white.png" alt="Twitter icon">
             </div>
         </footer>
     </main>
